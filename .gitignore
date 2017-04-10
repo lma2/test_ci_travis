@@ -2,3 +2,4 @@
 .idea
 processing/
 __pycache__/
+.coverage
