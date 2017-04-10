@@ -14,3 +14,10 @@ script:
     - py.test --cov-report term --cov=.
     - pylint test_om_pytest.py
 
+after_failure:
+    - cat /home/travis/builds/test_ci_travis/*.log
+
+notifications:
+  email:
+    on_success: always
+    on_failure: always
