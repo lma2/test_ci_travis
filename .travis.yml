@@ -16,6 +16,7 @@ script:
 
 after_failure:
     - cat /home/travis/builds/test_ci_travis/*.log
+    - ls .
 
 notifications:
   email:
