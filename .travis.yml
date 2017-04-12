@@ -15,7 +15,7 @@ script:
     - pylint test_om_pytest.py
 
 after_success:
-    - ls .
+    - pylint test_om_pytest.py
 
 after_failure:
     - cat /home/travis/builds/test_ci_travis/*.log
